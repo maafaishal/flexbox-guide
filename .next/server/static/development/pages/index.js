@@ -3255,7 +3255,7 @@ var styles = function styles(theme) {
         maxWidth: 1300
       },
       '& .top': {
-        padding: '50px 10px',
+        padding: '50px 10px ',
         '& img': {
           display: 'inline',
           margin: '0 20px',

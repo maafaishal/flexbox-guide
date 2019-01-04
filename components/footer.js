@@ -21,7 +21,7 @@ const styles = theme => ({
     },
 
     '& .top': {
-      padding: '50px 10px',
+      padding: '50px 10px ',
 
       '& img': {
         display: 'inline',
