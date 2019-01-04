@@ -18,6 +18,7 @@ const styles = theme => ({
       padding: '25px 20px',
       height: 225,
       display: 'flex',
+      justifyContent: 'center',
       flexWrap: 'no-wrap'
     },
 

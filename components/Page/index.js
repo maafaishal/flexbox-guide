@@ -7,6 +7,7 @@ import {
   Grid
 } from '@material-ui/core'
 
+import TopHeader from 'components/top-header'
 import Footer from 'components/footer'
 
 import FlexDirection from 'components/Page/Parent/FlexDirection'
@@ -55,9 +56,10 @@ class Index extends React.Component {
         <Head
           title="Flexbox Demo"
         />
+        <TopHeader />
         <div className="container">
           <Grid container spacing={24}>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={12} md={6}>
               <FlexDirection />
               <FlexWrap />
               <FlexFlow />
@@ -65,7 +67,7 @@ class Index extends React.Component {
               <FlexAlignItems />
               <FlexAlignContent />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={12} md={6}>
               <FlexOrder />
               <FlexGrow />
               <FlexShrink />

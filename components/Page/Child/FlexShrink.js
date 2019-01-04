@@ -5,7 +5,8 @@ import { withStyles } from '@material-ui/core/styles'
 
 import {
   Typography,
-  Button
+  Button,
+  Hidden
 } from '@material-ui/core'
 
 const styles = theme => ({
@@ -114,16 +115,18 @@ class Index extends React.Component {
               3
             </Typography>
           </div>
-          <div className="box box-2">
-            <Typography variant="h6" gutterBottom>
+          <Hidden xsDown>
+            <div className="box box-2">
+              <Typography variant="h6" gutterBottom>
               4
-            </Typography>
-          </div>
-          <div className="box box-2">
-            <Typography variant="h6" gutterBottom>
+              </Typography>
+            </div>
+            <div className="box box-2">
+              <Typography variant="h6" gutterBottom>
               5
-            </Typography>
-          </div>
+              </Typography>
+            </div>
+          </Hidden>
         </div>
       </div>
     )

@@ -41,6 +41,14 @@ const styles = theme => ({
       '& p': {
         color: '#fff',
         fontSize: 12
+      },
+      '& a': {
+        color: '#fff',
+        textDecoration: 'none',
+
+        '&:hover': {
+          textDecoration: 'underline'
+        }
       }
     }
   }
@@ -65,7 +73,7 @@ class Index extends React.Component {
         </div>
         <div className="bottom">
           <Typography variant="body1" gutterBottom>
-          © 2019 Flexbox Guide
+          © 2019 Flexbox Guide by <a href="https://github.com/maafaishal" target="_blank" rel="noopener noreferrer">Muhammad Al Anis Faishal</a>
           </Typography>
         </div>
       </footer>
