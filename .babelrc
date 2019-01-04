@@ -1,0 +1,26 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "root": "./",
+          "actions": "./actions",
+          "components": "./components",
+          "data": "./data",
+          "lang": "./lang",
+          "modules": "./modules",
+          "pages": "./pages",
+          "reducers": "./reducers",
+          "sagas": "./sagas",
+          "selectors": "./selectors",
+          "static": "./static",
+          "styles": "./styles",
+          "utils": "./utils"
+        }
+      }
+    ]
+  ],
+}
