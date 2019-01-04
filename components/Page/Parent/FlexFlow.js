@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import { withStyles } from '@material-ui/core/styles'
 
 import {
@@ -136,6 +135,9 @@ class Index extends React.Component {
             wrap-reverse
           </Button>
         </div>
+        <Typography className="detail" variant="body1" gutterBottom>
+          flex-flow: <b>{direction}</b> <b>{wrap}</b>
+        </Typography>
         <div className="content" style={{ flexFlow: `${direction} ${wrap}` }}>
           <div className="box box-1">
             <Typography variant="h6" gutterBottom>

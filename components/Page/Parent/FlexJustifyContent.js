@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import htmr from 'htmr'
 import { withStyles } from '@material-ui/core/styles'
 
 import {
@@ -70,16 +70,41 @@ const styles = theme => ({
 
 class Index extends React.Component {
   state = {
-    value: 'flex-start'
+    value: 'flex-start',
+    detail: 'semua <i>item</i> berada di <b>sebelah kiri</b>'
   };
 
   handleChange = value => {
     this.setState({ value: value })
+    var detail = ''
+
+    switch (value) {
+      case 'flex-start':
+        detail = 'semua <i>item</i> berada di <b>sebelah kiri</b>'
+        break
+      case 'flex-end':
+        detail = 'semua <i>item</i> berada di <b>sebelah kanan</b>'
+        break
+      case 'center':
+        detail = 'semua <i>item</i> berada di <b>tengah</b>'
+        break
+      case 'space-between':
+        detail = 'semua <i>item</i> <b>terbagi</b>'
+        break
+      case 'space-around':
+        detail = 'semua <i>item</i> <b>terbagi rata/sama</b>'
+        break
+      case 'space-evenly':
+        detail = 'semua <i>item</i> <b>terbagi rata/sama antar <i>item</i> dan sisi samping</b>'
+        break
+      default:
+    }
+    this.setState({ detail: detail })
   };
 
   render () {
     const { classes } = this.props
-    const { value } = this.state
+    const { value, detail } = this.state
 
     return (
       <div className={classes.root}>
@@ -118,6 +143,9 @@ class Index extends React.Component {
           space-evenly
           </Button>
         </div>
+        <Typography className="detail" variant="body1" gutterBottom>
+          {htmr(detail)}
+        </Typography>
         <div className="content" style={{ justifyContent: value }}>
           <div className="box box-1">
             <Typography variant="h6" gutterBottom>

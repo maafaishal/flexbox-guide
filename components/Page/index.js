@@ -36,6 +36,13 @@ const styles = theme => ({
       marginBottom: 15
     },
 
+    '& .detail': {
+      textAlign: 'center',
+      marginTop: 10,
+      marginBottom: 10,
+      fontSize: 14
+    },
+
     '& button': {
       padding: '4px 8px !important',
       textTransform: 'lowercase',

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import htmr from 'htmr'
 import { withStyles } from '@material-ui/core/styles'
 
 import {
@@ -70,16 +70,32 @@ const styles = theme => ({
 
 class Index extends React.Component {
   state = {
-    value: 'nowrap'
+    value: 'nowrap',
+    detail: 'semua <i>item</i> <b>satu baris</b>'
   };
 
   handleChange = value => {
     this.setState({ value: value })
+    var detail = ''
+
+    switch (value) {
+      case 'nowrap':
+        detail = 'semua <i>item</i> <b>satu baris</b>'
+        break
+      case 'wrap':
+        detail = 'semua <i>item</i> <b>lebih dari satu baris</b>, dari <b>atas</b> ke <b>bawah</b>'
+        break
+      case 'wrap-reverse':
+        detail = 'semua <i>item</i> <b>lebih dari satu baris</b>, dari <b>bawah</b> ke <b>atas</b>'
+        break
+      default:
+    }
+    this.setState({ detail: detail })
   };
 
   render () {
     const { classes } = this.props
-    const { value } = this.state
+    const { value, detail } = this.state
 
     return (
       <div className={classes.root}>
@@ -103,6 +119,9 @@ class Index extends React.Component {
             wrap-reverse
           </Button>
         </div>
+        <Typography className="detail" variant="body1" gutterBottom>
+          {htmr(detail)}
+        </Typography>
         <div className="content" style={{ flexWrap: value }}>
           <div className="box box-1">
             <Typography variant="h6" gutterBottom>
