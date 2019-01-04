@@ -84,7 +84,7 @@ class Index extends React.Component {
     return (
       <div className={classes.root}>
         <Typography variant="h5" gutterBottom>
-          flex-grow
+          flex-shrink
         </Typography>
         <div style={{ marginTop: 10, textAlign: 'center' }}>
           <Button variant="outlined" color="primary"

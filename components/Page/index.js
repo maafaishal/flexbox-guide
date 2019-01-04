@@ -7,6 +7,8 @@ import {
   Grid
 } from '@material-ui/core'
 
+import Footer from 'components/footer'
+
 import FlexDirection from 'components/Page/Parent/FlexDirection'
 import FlexWrap from 'components/Page/Parent/FlexWrap'
 import FlexFlow from 'components/Page/Parent/FlexFlow'
@@ -70,6 +72,7 @@ class Index extends React.Component {
             </Grid>
           </Grid>
         </div>
+        <Footer />
       </div>
     )
   }

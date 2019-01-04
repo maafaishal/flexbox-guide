@@ -18,6 +18,7 @@ const theme = createMuiTheme({
     }
   },
   typography: {
+    fontFamily: 'Montserrat',
     useNextVariants: true
   }
 })

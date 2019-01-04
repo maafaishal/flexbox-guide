@@ -201,22 +201,31 @@ function (_Document) {
           lineNumber: 24
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+        href: "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900",
+        rel: "stylesheet",
+        media: "all",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 28
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 31
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
         },
         __self: this
       })));
@@ -256,7 +265,7 @@ MyDocument.getInitialProps = function (ctx) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({}, props, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 67
         },
         __self: this
       }));
@@ -279,7 +288,7 @@ MyDocument.getInitialProps = function (ctx) {
     styles: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87
+        lineNumber: 88
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
@@ -290,7 +299,7 @@ MyDocument.getInitialProps = function (ctx) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88
+        lineNumber: 89
       },
       __self: this
     }), styled_jsx_server__WEBPACK_IMPORTED_MODULE_3___default()() || null)
