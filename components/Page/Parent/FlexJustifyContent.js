@@ -71,7 +71,7 @@ const styles = theme => ({
 class Index extends React.Component {
   state = {
     value: 'flex-start',
-    detail: 'semua <i>item</i> berada di <b>sebelah kiri</b>'
+    detail: 'semua <i>item</i> pada satu baris berada di <b>sebelah kiri</b>'
   };
 
   handleChange = value => {
@@ -80,22 +80,22 @@ class Index extends React.Component {
 
     switch (value) {
       case 'flex-start':
-        detail = 'semua <i>item</i> berada di <b>sebelah kiri</b>'
+        detail = 'semua <i>item</i> pada satu baris berada di <b>sebelah kiri</b>'
         break
       case 'flex-end':
-        detail = 'semua <i>item</i> berada di <b>sebelah kanan</b>'
+        detail = 'semua <i>item</i> pada satu baris berada di <b>sebelah kanan</b>'
         break
       case 'center':
-        detail = 'semua <i>item</i> berada di <b>tengah</b>'
+        detail = 'semua <i>item</i> pada satu baris berada di <b>tengah</b>'
         break
       case 'space-between':
-        detail = 'semua <i>item</i> <b>terbagi</b>'
+        detail = 'semua <i>item</i> pada satu baris <b>terbagi</b>'
         break
       case 'space-around':
-        detail = 'semua <i>item</i> <b>terbagi rata/sama</b>'
+        detail = 'semua <i>item</i> pada satu baris <b>terbagi rata/sama</b>'
         break
       case 'space-evenly':
-        detail = 'semua <i>item</i> <b>terbagi rata/sama antar <i>item</i> dan sisi samping</b>'
+        detail = 'semua <i>item</i> pada satu baris <b>terbagi rata/sama antar <i>item</i> dan sisi samping</b>'
         break
       default:
     }
