@@ -67,7 +67,6 @@ class Index extends React.Component {
           </Typography>
           <div className="brand">
             <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer"><img src="/static/nextjs.png" alt="Next Js" /></a>
-            <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><img src="/static/reactjs.png" alt="React Js" /></a>
             <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"><img src="/static/nodejs.png" alt="Node Js" /></a>
           </div>
         </div>

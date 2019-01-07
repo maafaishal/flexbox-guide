@@ -20,6 +20,8 @@ import FlexAlignContent from 'components/Page/Parent/FlexAlignContent'
 import FlexOrder from 'components/Page/Child/FlexOrder'
 import FlexGrow from 'components/Page/Child/FlexGrow'
 import FlexShrink from 'components/Page/Child/FlexShrink'
+import FlexBasis from 'components/Page/Child/FlexBasis'
+import FlexAlignSelf from 'components/Page/Child/FlexAlignSelf'
 
 const styles = theme => ({
   root: {
@@ -30,6 +32,12 @@ const styles = theme => ({
       marginRight: 'auto',
       marginLeft: 'auto',
       maxWidth: 1300
+    },
+
+    '& .whiteBox': {
+      backgroundColor: '#fff',
+      borderRadius: 3,
+      padding: 25
     },
 
     '& h5': {
@@ -67,17 +75,23 @@ class Index extends React.Component {
         <div className="container">
           <Grid container spacing={24}>
             <Grid item xs={12} sm={12} md={6}>
-              <FlexDirection />
-              <FlexWrap />
-              <FlexFlow />
-              <FlexJustifyContent />
-              <FlexAlignItems />
-              <FlexAlignContent />
+              <div className="whiteBox">
+                <FlexDirection />
+                <FlexWrap />
+                <FlexFlow />
+                <FlexJustifyContent />
+                <FlexAlignItems />
+                <FlexAlignContent />
+              </div>
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
-              <FlexOrder />
-              <FlexGrow />
-              <FlexShrink />
+              <div className="whiteBox">
+                <FlexOrder />
+                <FlexGrow />
+                <FlexShrink />
+                <FlexBasis />
+                <FlexAlignSelf />
+              </div>
             </Grid>
           </Grid>
         </div>
